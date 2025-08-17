@@ -9,6 +9,9 @@
     "states": [
         {
             "name": "stamp-nanorep"
+        },
+        {
+            "name": "stamp-centcom-intern"
         }
     ]
 }

@@ -126,6 +126,25 @@
   - type: PresetIdCard
     job: NanotrasenCareerTrainer
 
+- type: entity
+  parent: IDCardStandard
+  id: CentralCommandInternIDCard
+  name: CentComm Intern ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: centcom
+    - state: idcentcom
+  - type: Item
+    heldPrefix:
+  - type: IdCard
+    jobTitle: job-name-centcomm-intern
+    jobIcon: JobIconNanotrasen
+  - type: Access
+    tags:
+    - CentralCommand
+    - NanotrasenRepresentative
+
 # Executive Access
 - type: entity
   parent: IDCardStandard
@@ -183,6 +202,34 @@
      enum.ChameleonUiKey.Key:
         type: ChameleonBoundUserInterface
 
+- type: entity
+  parent: IDCardStandard
+  id: ExecutiveInternIDCard
+  name: executive intern access card
+  description: The owner of this ID just barely qualifies to work at Central Command, listening to their orders is suggested, but not required. Refer to CentComm if you need further verification.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Misc/executiveintern.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Goobstation/Objects/Misc/executiveintern.rsi
+    quickEquip: true
+    slots:
+    - neck
+    - idcard
+  - type: Item
+    heldPrefix:
+    sprite: _Goobstation/Objects/Misc/executiveintern.rsi
+  - type: IdCard
+    jobTitle: job-name-exec-intern
+    jobIcon: JobIconNanotrasen
+  - type: Access
+    groups:
+    - AllAccess
+    tags:
+    - CentralCommand
+    - NanotrasenRepresentative
+    - BlueshieldOfficer
 
 # Navy Captain
 

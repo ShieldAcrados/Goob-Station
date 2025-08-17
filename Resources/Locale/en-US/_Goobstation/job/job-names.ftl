@@ -14,6 +14,8 @@ job-name-bs = Blueshield
 job-name-overall = Overall
 
 job-name-exec = Executive Access
+job-name-exec-intern = Executive Intern Access
+
 
 # Navy Stuff
 
@@ -23,6 +25,10 @@ job-name-navycaptain = Navy Captain
 job-name-diplomat = Diplomat
 job-name-inspector = Central Command Auditor
 job-name-nct = Nanotrasen Career Trainer
+
+# CC Stuff
+
+job-name-centcomm-intern = CentComm Intern
 
 # Syndicate
 
