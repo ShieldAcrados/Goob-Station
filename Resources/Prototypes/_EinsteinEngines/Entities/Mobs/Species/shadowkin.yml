@@ -106,10 +106,11 @@
   - type: Bloodstream
     bloodlossDamage:
       types:
-        Bloodloss: 1
+        Bloodloss: 0.75 #Goobstation - Shadowkin decuck
     bloodlossHealDamage:
       types:
-        Bloodloss: -0.25
+        Bloodloss: -0.5 #Goobstation - Shadowkin decuck
+    BloodlossThreshold: 0.75 #Goobstation - Shadowkin decuck
     bloodReagent: BlackBlood
   - type: Temperature
     heatDamageThreshold: 330
@@ -221,6 +222,13 @@
     - DoorBumpOpener
     - AnomalyHost
     - ShadowkinEmotes
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 1.0
+    damageRecovery:
+      types:
+        Asphyxiation: -1.0
 
 - type: entity
   save: false
