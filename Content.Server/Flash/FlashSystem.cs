@@ -209,6 +209,14 @@ namespace Content.Server.Flash
             var multiplier = multiplierEv.Multiplier;
             // Goobstation end
 
+            // Goobstation start
+            // Shadowkin tweaks - Check for the presence of both the Flash vulnerable and immune components, if present, divide the duration multiplier by 10. 
+            if (HasComp<FlashVulnerableComponent>(target) && HasComp<FlashImmunityComponent>(target))
+            {
+                multiplier /= 10f;
+            }
+            // Goobstatiom end
+
             // don't paralyze, slowdown or convert to rev if the target is immune to flashes
             if (!_statusEffectsSystem.TryAddStatusEffect<FlashedComponent>(target, FlashedKey, TimeSpan.FromSeconds(flashDuration * multiplier / 1000f), true)) // Goob edit
                 return;

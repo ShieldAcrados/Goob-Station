@@ -106,11 +106,11 @@
   - type: Bloodstream
     bloodlossDamage:
       types:
-        Bloodloss: 0.75 #Goobstation - Shadowkin decuck
+        Bloodloss: 0.75 #Goobstation - Shadowkin tweaks
     bloodlossHealDamage:
       types:
-        Bloodloss: -0.5 #Goobstation - Shadowkin decuck
-    BloodlossThreshold: 0.75 #Goobstation - Shadowkin decuck
+        Bloodloss: -0.5 #Goobstation - Shadowkin tweaks
+    BloodlossThreshold: 0.75 #Goobstation - Shadowkin tweaks
     bloodReagent: BlackBlood
   - type: Temperature
     heatDamageThreshold: 330
