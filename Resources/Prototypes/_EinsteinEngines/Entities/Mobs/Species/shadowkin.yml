@@ -225,10 +225,10 @@
   - type: Respirator
     damage:
       types:
-        Asphyxiation: 1.0
+        Asphyxiation: 0.75
     damageRecovery:
       types:
-        Asphyxiation: -1.0
+        Asphyxiation: -1.25
 
 - type: entity
   save: false
